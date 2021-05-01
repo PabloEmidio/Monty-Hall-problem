@@ -9,7 +9,7 @@ import sys
 
 player_won = 0
 
-if sys.argv[1].isdigit():
+if len(sys.argv)>1 and sys.argv[1].isdigit():
     numbers_of_matches = int(sys.argv[1]) 
 else:
     sys.exit('Monty Hall problem: parameters error')
@@ -31,6 +31,7 @@ for _ in range(numbers_of_matches):
         
     if player_choice == car_is:
         player_won += 1
+
         
 print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the Matches')
     
