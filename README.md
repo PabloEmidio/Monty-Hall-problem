@@ -11,15 +11,17 @@ source: [https://en.wikipedia.org/wiki/Monty_Hall_problem](https://en.wikipedia.
 ## How to test by yourself
 ```
 $ git clone https://github.com/PabloEmidio/Monty-Hall-problem
-$ python3 Monty-Hall-problem/main.py
+$ python3 Monty-Hall-problem/main.py {matches number}
 ```
 
 ---
 
-## Some outputs
+## Some examples
 ```
-Player is with 66.00% wins and 34.00% defeats
+[example@example ]$ python3 Monty-Hall-problem/main.py 300
+763 matches done, switching the door it'd win 494 times, 64.7% of the matches
 ```
 ```
-Player is with 67.00% wins and 33.00% defeats 
+[example@example ]$ python3 Monty-Hall-problem/main.py 1000
+1000 matches done, switching the door it'd win 665 times, 66.5% of the matches
 ```
