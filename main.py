@@ -33,5 +33,5 @@ for _ in range(numbers_of_matches):
         player_won += 1
 
         
-print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the Matches')
+print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the matches')
     
