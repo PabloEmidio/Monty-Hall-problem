@@ -5,13 +5,17 @@
 [source: https://en.wikipedia.org/wiki/Monty_Hall_problem](https://en.wikipedia.org/wiki/Monty_Hall_problem)
 
 ### This code is a simulation to show what happens if to switch in Monty Hall problem. 
+
 ---
+
 ## How to test by myself
----
 ```
 $ git clone https://github.com/PabloEmidio/Monty-Hall-problem
 $ python3 Monty-Hall-problem/main.py
 ```
+
+---
+
 ## outputs
 ```
 Player is with 66.00% wins and 34.00% defeats
