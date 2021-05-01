@@ -8,7 +8,7 @@ source: [https://en.wikipedia.org/wiki/Monty_Hall_problem](https://en.wikipedia.
 
 ---
 
-## How to test by myself
+## How to test by yourself
 ```
 $ git clone https://github.com/PabloEmidio/Monty-Hall-problem
 $ python3 Monty-Hall-problem/main.py
@@ -16,7 +16,7 @@ $ python3 Monty-Hall-problem/main.py
 
 ---
 
-## outputs
+## Some outputs
 ```
 Player is with 66.00% wins and 34.00% defeats
 ```
