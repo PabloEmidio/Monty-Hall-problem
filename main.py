@@ -5,9 +5,10 @@ source: https://en.wikipedia.org/wiki/Monty_Hall_problem
 
 # This code is a simulation to show what happens if to switch
 from random import randint
+import sys
 
 player_won = player_defeats = 0
-numbers_of_matches = 1000
+numbers_of_matches = int(sys.argv[1])
 for _ in range(numbers_of_matches):
     car_is = randint(1, 3)
     player_choice = randint(1, 3)
@@ -28,5 +29,5 @@ for _ in range(numbers_of_matches):
     else:
         player_defeats += 1
         
-print(f'Player is with {(player_won/numbers_of_matches*100):.2f}% wins and {(player_defeats/numbers_of_matches*100):.2f}% defeats ')
+print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the Matches')
     
