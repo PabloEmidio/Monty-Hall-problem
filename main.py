@@ -7,8 +7,13 @@ source: https://en.wikipedia.org/wiki/Monty_Hall_problem
 from random import randint
 import sys
 
-player_won = player_defeats = 0
-numbers_of_matches = int(sys.argv[1])
+player_won = 0
+
+if sys.argv[1].isdigit():
+    numbers_of_matches = int(sys.argv[1]) 
+else:
+    sys.exit('Monty Hall problem: parameters error')
+    
 for _ in range(numbers_of_matches):
     car_is = randint(1, 3)
     player_choice = randint(1, 3)
@@ -26,8 +31,6 @@ for _ in range(numbers_of_matches):
         
     if player_choice == car_is:
         player_won += 1
-    else:
-        player_defeats += 1
         
 print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the Matches')
     
