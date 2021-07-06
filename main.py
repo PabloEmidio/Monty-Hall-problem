@@ -32,6 +32,7 @@ for _ in range(numbers_of_matches):
     if player_choice == car_is:
         player_won += 1
 
-        
+
 print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the matches')
-    
+if numbers_of_matches<=200:
+    print('\n\n\033[1;31mThe simulation is more accurate when number of matches is greater then 200\033[m')
