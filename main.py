@@ -15,9 +15,8 @@ else:
     sys.exit('Monty Hall problem: parameters error')
 
 for _ in range(numbers_of_matches):
-    car_is = randint(1, 3)
+    car_is = opened_door = randint(1, 3) # the opened door will be based on where the car is
     player_choice = randint(1, 3)
-    opened_door = car_is # the opened door will be based on where the car is
     
     while opened_door in (car_is, player_choice):
         opened_door = randint(1, 3)
