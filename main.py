@@ -34,4 +34,4 @@ for _ in range(numbers_of_matches):
 
 print(f'{numbers_of_matches} matches done, switching the door it\'d win {player_won} times, {(player_won/numbers_of_matches*100):.1f}% of the matches')
 if numbers_of_matches<=200:
-    print('\n\n\033[1;31mThe simulation is more accurate when number of matches is greater then 200\033[m')
+    print('\n\n\033[1;31mThe simulation is more accurate when number of matches is greater tha  n 200\033[m')
