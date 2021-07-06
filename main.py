@@ -13,13 +13,13 @@ if len(sys.argv)>1 and sys.argv[1].isdigit():
     numbers_of_matches = int(sys.argv[1]) 
 else:
     sys.exit('Monty Hall problem: parameters error')
-    
+
 for _ in range(numbers_of_matches):
     car_is = randint(1, 3)
     player_choice = randint(1, 3)
-    opened_door = car_is
+    opened_door = car_is # the opened door will be based on where the car is
     
-    while opened_door == player_choice or opened_door == car_is:
+    while opened_door in (car_is, player_choice):
         opened_door = randint(1, 3)
         
     if (player_choice == 2 and opened_door == 3) or (player_choice == 3 and opened_door == 2):
